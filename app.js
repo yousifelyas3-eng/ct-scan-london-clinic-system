@@ -1,4 +1,4 @@
-const parts = ["app.part1.txt", "app.part2.txt", "app.part3.txt", "app.part4.txt"];
+const parts = ["app.part1.txt", "app.part2.txt", "app.part3.txt", "app.part4a.txt", "app.part4b.txt"];
 const chunks = await Promise.all(parts.map(async (part) => {
   const response = await fetch(part, { cache: "no-store" });
   if (!response.ok) throw new Error("Unable to load " + part);
